@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+
+server:
+  port: 3001
+
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-client-dev
+
+---
+
+server:
+  port: 3002
+
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-client-test
